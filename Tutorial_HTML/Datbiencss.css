@@ -1,0 +1,16 @@
+/* khai bao bien toann cuc, ap dung cho tat ca ca phan sau
+uu diem: de dang thay dooi cho tat
+ ca cac daau de ma minh su dung chung mot mau*/
+:root{
+    --text-color:green;
+}
+
+h1{
+    color:var(text-color);
+}
+h2{
+    color:var(text-color)
+}
+h3{
+    color:var(text-color)
+}

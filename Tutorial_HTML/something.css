@@ -1,0 +1,126 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.container{
+	width: 100%;
+	display: block;
+}
+.aligh-center{
+	width: 50%;
+	margin: 0px auto;
+	display: block;
+}
+.header{
+	width: 100%;
+	margin-top: 15px;
+	display: block;
+}
+.header .logo{
+	margin: 15px;
+	display: flex;
+}
+.header .logo p{
+	width: 25%;
+	background-color: orange;
+	text-align: center;
+	font-weight: bold;
+}
+.header .logo h3{
+	width: 75%
+}
+.header .menu{
+	width: 100%;	
+	padding: 0px;
+	margin: 0px;
+	background-color: #1f4cf3;
+}
+.header .menu ul{
+	width: 80%;
+	display: flex;
+	list-style-type: none;	
+	color: white;
+	margin: 0px auto;
+}
+.header .menu ul li{
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-right: solid white 1px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.header .menu ul li:hover{
+	background-color: orange;
+}
+.header .menu ul li a{
+	color: white;
+	text-decoration: none;
+}
+.header .menu .none{
+	width: 25%;
+}
+.main{
+	width: 100%;
+	display: flex;
+
+}
+.main .main-left{
+	width: 75%;
+	padding: 20px;
+}
+.main .main-left p{
+	font-weight: bold;
+	text-align: justify;
+}
+.main .main-right{
+	width: 25%;	
+	border: solid 5px;
+	padding: 0px;
+	max-height: 180px;
+}
+.main .main-right h4{
+	text-align: center;
+}
+.main .main-right ul{
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+.main .main-right ul li{
+  	font-weight: bold;
+}
+.form{
+	display: flex;
+	width: 100%;
+	margin-bottom: 5px; 
+}
+.form label{
+	width: 25%;
+	float: left;
+	text-align: left;
+	font-weight: bold;
+	padding: 5px;
+}
+.form input {
+	width: 30%;
+	float: left;
+}
+.form textarea {
+	float: left;
+	width: 30%;
+}
+.main-left .luu button{
+	border: none;
+	padding-right: 35px;
+	padding-left: 35px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: orange;
+}
+.main-left .luu .xoa{
+	background-color: red;
+}
+
+
