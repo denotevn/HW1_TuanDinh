@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title><b>my homework</b></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--chat box-->
+        <div class="chat-box">
+            <!--client-->
+            <div class =  "client">
+                <img class="image" src="/static/image/logo.jpg" alt="logo" />
+                <div class="client-info">
+                    <h2>Tuấn Đinh</h2>
+                    <p>Online</p>
+
+                </div>
+            </div>
+            <!--main chat section-->
+            <div class="chats" id = "main_chats" >
+                <div class="client-chat">Hi !</div>
+                <div class="my-chat">Hi hi !</div>
+
+                
+            </div>
+            <!--input field section-->
+            <div class="chat-input" >
+            <input type="text" id = "typing" placeholder="Enter message" />
+            <button class = "send-btn" id = "send-btn">
+                <img src = "/static/image/send1.jpg" alt="Send">
+            </button>
+            </div>
+            
+        </div>
+        <!--button-->
+        <div class="chat-btn">
+            <img src = "/static/image/mess.jpg" alt="Chat-box icon btn">
+        </div>
+    </div>
+    <script src="/static/js/utils.js"></script>
+    {% if method == "socket" %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+    {% endif %}
+        <script src="/static/js/{{ method }}.js"></script>
+
+    
+    <script src = "/static/js/socket.js"></script>
+</body>
+
+</html>
